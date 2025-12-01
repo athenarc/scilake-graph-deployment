@@ -4,19 +4,19 @@ This is a minimal, generic Docker Compose configuration for running a single Neo
 
 ## Quick Start
 
-1. **Create a `.env` file** (optional, but recommended):
-   ```bash
-   cp .env.example .env
-   # Edit .env with your settings
-   ```
-
-2. **Create data directories:**
+1. **Create data directories:**
    ```bash
    mkdir -p neo4j-data/{data,logs,import,plugins,conf}
    sudo chown -R 7474:7474 neo4j-data
-   ```
+ 
+2. **Create a `.env` file** (optional, but recommended):
+   ```bash
+   cp .env.example .env
+   # Edit .env with your settings
+   ```  ```
+3. **Review the configuration options below and make any necessary changes to the `.env` file.**
 
-3. **Start Neo4j:**
+4. **Start Neo4j:**
    ```bash
    docker compose up -d
    ```
